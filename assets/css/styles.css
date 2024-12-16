@@ -40,6 +40,7 @@
     --normal-font-size: 1rem;
     --small-font-size: 0.85rem;
   }
+
 }
 
 /* @@@@@@@@@@@@@@@@@@ base @@@@@@@@@@@@@@@@@ */
@@ -93,11 +94,11 @@ button {
 /* @@@@@@@@@@@@@@@@@@ home @@@@@@@@@@@@@@@@@ */
 
 .home__container {
-  padding: 10rem 0 3rem;
+  padding: 5rem 0 3rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  gap: 3rem;
+  gap: 1rem;
 }
 
 .home__title {
@@ -205,3 +206,28 @@ button {
   }
 }
 
+.copy-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Estilos do Popup */
+.popup {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #4CAF50; /* Verde */
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.popup.show {
+  opacity: 1;
+  visibility: visible;
+}

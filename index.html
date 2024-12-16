@@ -33,14 +33,26 @@
 
             <div class="home__data">
               <h1 class="home__title">
-                Feliz Natal<br />
+                Feliz Natal,<br />
                 Mariana!
               </h1>
               <p class="home__description">
                 Que a magia do Natal ilumine sua vida com amor e felicidade.
               </p>
-              <a href="#" class="btn">Clique aqui</a>
+              
             </div>
+            
+          </div>
+          <label for="pixCode">ENDEREÇO</label>
+    <div class="copy-container">
+      <input type="text" id="pixCode" value="RUA ONDE MORO, NUMERO E BAIRRO" readonly>
+      <button id="copyButton" class="btn" onclick="copyText()">
+        Clique aqui
+      </button>
+    </div>
+    <div id="popup" class="popup">Endereço copiado!</div>
+          <div>
+            <a class="btn">Ir para meu presente</a>
           </div>
         </div>
       </section>

@@ -25,4 +25,34 @@ onload = () => {
   }
   
   setInterval(createSnowflake, 100); // Cria um floco a cada 100ms
+
+  function copyText() {
+    // Pega o campo de texto
+    const pixCode = document.getElementById("pixCode");
+  
+    // Seleciona e copia o texto
+    pixCode.select();
+    pixCode.setSelectionRange(0, 99999); // Para dispositivos móveis
+  
+    navigator.clipboard.writeText(pixCode.value)
+      .then(() => {
+        showPopup();
+      })
+      .catch((err) => {
+        console.error("Erro ao copiar: ", err);
+      });
+  }
+  
+  function showPopup() {
+    const popup = document.getElementById("popup");
+  
+    // Mostra o popup adicionando a classe 'show'
+    popup.classList.add("show");
+  
+    // Esconde o popup após 3 segundos
+    setTimeout(() => {
+      popup.classList.remove("show");
+    }, 3000);
+  }
+  
   
