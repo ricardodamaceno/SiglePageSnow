@@ -55,4 +55,20 @@ onload = () => {
     }, 3000);
   }
   
-  
+  // Obter a URL atual
+const url = new URL(window.location.href);
+
+// Usar URLSearchParams para acessar os parâmetros da URL
+const params = new URLSearchParams(url.search);
+
+// Obter o valor do parâmetro 'nome'
+const nome = params.get('nome');  // Exemplo: Mariana
+
+// Verificar se o parâmetro 'nome' existe na URL
+if (nome) {
+  // Atualizar o conteúdo de h1 com o valor do parâmetro
+  document.querySelector('.home__title').innerHTML = `Feliz Natal,<br />${nome}!`;
+} else {
+  // Caso o parâmetro 'nome' não exista, manter a saudação padrão
+  document.querySelector('.home__title').innerHTML = 'Feliz Natal,<br />Pessoa!';
+}
