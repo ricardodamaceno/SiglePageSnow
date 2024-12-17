@@ -207,6 +207,7 @@ button {
 }
 
 .copy-container {
+  margin-top: 3px;
   display: flex;
   align-items: center;
   gap: 5px;
@@ -230,4 +231,41 @@ button {
 .popup.show {
   opacity: 1;
   visibility: visible;
+}
+
+input {
+  flex: 1;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  color: #555;
+}
+
+input:focus {
+  outline: none;
+  border-color: #555;
+}
+
+.button_Copiar {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #4CAF50; /* Cor do botão */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button_Copiar:hover {
+  background-color: #45a049; /* Efeito hover */
+}
+
+.centralizada {
+  display: flex; /* Habilita Flexbox */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  height: 10vh; /* Altura total da viewport */
 }
