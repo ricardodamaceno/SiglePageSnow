@@ -16,7 +16,7 @@ onload = () => {
     snowflake.style.animationDuration = Math.random() * 3 + 2 + "s"; // Entre 2 e 5 segundos
     snowflake.style.opacity = Math.random();
     snowflake.style.fontSize = Math.random() * 10 + 10 + "px"; // Entre 10px e 20px
-    snowflake.innerHTML = "❄";
+    snowflake.innerHTML = "★";
     snowContainer.appendChild(snowflake);
   
     setTimeout(() => {
@@ -67,8 +67,8 @@ const nome = params.get('nome');  // Exemplo: Mariana
 // Verificar se o parâmetro 'nome' existe na URL
 if (nome) {
   // Atualizar o conteúdo de h1 com o valor do parâmetro
-  document.querySelector('.home__title').innerHTML = `Feliz Natal,<br />${nome}!`;
+  document.querySelector('.home__title').innerHTML = `Ano Novo,<br />${nome}!`;
 } else {
   // Caso o parâmetro 'nome' não exista, manter a saudação padrão
-  document.querySelector('.home__title').innerHTML = 'Feliz Natal,<br />Pessoa!';
+  document.querySelector('.home__title').innerHTML = 'Ano Novo,<br />Pessoa!';
 }

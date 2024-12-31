@@ -4,12 +4,13 @@
 :root {
   --header-height: 4rem;
 
-  --first-color: hsl(355, 70%, 54%);
-  --first-color-dark: hsl(355, 70%, 40%);
-  --body-color: hsl(355, 20%, 12%);
-  --container-color: hsl(355, 20%, 16%);
-  --title-color: hsl(355, 0%, 95%);
-  --text-color: hsl(355, 0%, 75%);
+  --first-color: hsl(50, 100%, 50%); /* Dourado brilhante */
+  --first-color-dark: hsl(50, 100%, 35%); /* Dourado mais escuro */
+  --body-color: hsl(0, 0%, 95%); /* Branco suave */
+  --container-color: hsl(0, 0%, 100%); /* Branco puro */
+  --title-color: hsl(45, 100%, 40%); /* Dourado forte */
+  --text-color: hsl(45, 50%, 30%); /* Dourado suave */
+  
 
   --body-font: 'Rubik', sans-serif;
   --h1-font-size: 2.4rem;
@@ -158,7 +159,7 @@ button {
   display: grid;
   justify-content: center;
   align-items: center;
-  background-color: hsla(355, 20%, 12%, 0.5);
+  background-color: hsla(50, 100%, 50%, 0.5); /* Dourado com 50% de transparência */
   backdrop-filter: blur(20px);
 }
 
@@ -192,7 +193,7 @@ button {
 .snowflake {
   position: absolute;
   top: 0;
-  color: white;
+  color: yellow;
   user-select: none;
   animation: fall linear;
 }
