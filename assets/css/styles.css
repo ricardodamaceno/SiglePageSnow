@@ -4,12 +4,12 @@
 :root {
   --header-height: 4rem;
 
-  --first-color: hsl(50, 100%, 50%); /* Dourado brilhante */
-  --first-color-dark: hsl(50, 100%, 35%); /* Dourado mais escuro */
-  --body-color: hsl(0, 0%, 95%); /* Branco suave */
-  --container-color: hsl(0, 0%, 100%); /* Branco puro */
-  --title-color: hsl(45, 100%, 40%); /* Dourado forte */
-  --text-color: hsl(45, 50%, 30%); /* Dourado suave */
+  --first-color: hsl(300, 80%, 70%); /* Rosa lilás */
+  --first-color-dark: hsl(300, 80%, 55%); /* Lilás mais intenso */
+  --body-color: hsl(280, 20%, 95%); /* Lilás muito suave */
+  --container-color: hsl(0, 0%, 100%); /* Branco puro */  
+  --title-color: hsl(320, 60%, 50%); /* Fúcsia vibrante */
+  --text-color: hsl(320, 40%, 30%); /* Rosa escuro */
   
 
   --body-font: 'Rubik', sans-serif;
@@ -117,7 +117,8 @@ button {
 .btn {
   display: inline-block;
   background-color: var(--first-color);
-  color: var(--title-color);
+  /* color: var(--title-color); */
+  color: white;
   padding: 1.2rem 1.6rem;
   border-radius: 2rem;
   font-weight: var(--font-medium);
@@ -159,7 +160,7 @@ button {
   display: grid;
   justify-content: center;
   align-items: center;
-  background-color: hsla(50, 100%, 50%, 0.5); /* Dourado com 50% de transparência */
+  background-color: hsla(280, 60%, 90%, 0.5); /* Lilás muito suave e transparente */
   backdrop-filter: blur(20px);
 }
 
@@ -252,16 +253,17 @@ input:focus {
 .button_Copiar {
   padding: 10px 20px;
   font-size: 18px;
-  background-color: #4CAF50; /* Cor do botão */
-  color: white;
-  border: none;
+  background-color: hsl(0, 0%, 100%); /* Branco */
+  color: hsl(45, 80%, 40%); /* Dourado no texto */
+  border: 2px solid hsl(45, 80%, 40%); /* Borda dourada */
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .button_Copiar:hover {
-  background-color: #45a049; /* Efeito hover */
+  background-color: hsl(45, 70%, 80%); /* Dourado claro */
+  color: hsl(0, 0%, 10%); /* Texto escuro */
 }
 
 .centralizada {
